@@ -1,0 +1,18 @@
+.page-header {
+	overflow: hidden;
+	margin: 0;
+	padding: 8px 32px;
+}
+
+.page-header__title {
+	display: inline-block;
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #056571;
+	font-size: 18px;
+}
+
+.page-header__subtitle {
+	display: inline-block;
+	font-size: 18px;
+}
