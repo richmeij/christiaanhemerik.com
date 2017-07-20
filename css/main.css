@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Merriweather|Roboto');
+
+body {
+	font: 14px/18px 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+	margin: 0;
+	color: #414141;
+}
+
+h1, h2, h3 {
+	font-family: 'Bitter', 'Helvetica Neue', 'Arial', sans-serif;
+	font-weight: normal;
+	line-height: 1.65em;
+	margin-bottom: .5em;
+}
+
+a {
+	color: #056571;
+	border-bottom: 1px solid #626E60;
+	text-decoration: none;
+}
+
+.page-header {
+	margin: 0;
+	padding: 8px 32px;
+	overflow: hidden;
+}
+
+.page-header__title {
+	display: inline-block;
+	font-size: 18px;
+	border-right: 1px solid #056571;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+.page-header__subtitle {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.navigation {
+	display: block;
+	float: right;
+	margin: 18px 0 0;
+}
+
+.navigation__item {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	padding-bottom: 2px;
+
+	font-size: 18px;
+}
+
+.hero {
+	background: #D7CEC7;
+}
+
+.hero__title {
+	font-size: 64px;
+	text-shadow: 4px 4px white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hero__title span {
+	display: inline-block;
+	margin-left: 6px;
+	text-decoration: line-through;
+	opacity: .5;
+}
+
+.hero__subtitle {
+	font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.hero__inner {
+	max-width: 1020px;
+	margin: 0 auto;
+	padding-top: 16px;
+	padding-bottom: 52px;
+	overflow: hidden;
+}
+
+.hero__text {
+	float: right;
+	width: 50%;
+}
+
+.hero__image {
+	display: block;
+	float:left;
+	border-radius: 50%;
+	max-width: 440px;
+	max-height: 440px;
+	box-shadow: 300px 100px 0 rgba(255, 255, 255, .5), 200px -450px 0 rgba(255, 255, 255, .2);
+}
