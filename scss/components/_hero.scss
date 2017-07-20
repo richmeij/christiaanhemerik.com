@@ -1,12 +1,19 @@
 .hero {
+	overflow: hidden;
+	padding-top: 52px;
+	padding-bottom: 64px;
 	background-color: $color-ui-100;
 }
 
 .hero__title {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 48px;
 	text-align: center;
 	text-shadow: 4px 4px $color-white;
-	font-size: 64px;
+	font-size: $font-size-900;
 	font-weight: bold;
+	line-height: $line-height-60;
 }
 
 .hero__title span {
@@ -23,27 +30,30 @@
 	a {
 		border-bottom: 1px solid $color-grey;
 		color: $color-green;
+		font-weight: 700;
 	}
 }
 
 .hero__inner {
-	overflow: hidden;
 	margin: 0 auto;
-	padding-top: 16px;
-	padding-bottom: 52px;
-	max-width: 1020px;
+	max-width: 1040px;
 }
 
-.hero__text {
+.hero__content {
+	@include box-sizing(border-box);
+	position: relative;
 	float: right;
-	width: 50%;
+	padding-right: 32px;
+	padding-left: 72px;
+	width: 60%;
 }
 
 .hero__image {
+	@include transform(rotate(-3deg));
+	z-index: -1;
 	display: block;
 	float: left;
-	max-width: 440px;
-	max-height: 440px;
-	border-radius: 50%;
+	width: 40%;
+	// border-radius: 50%;
 	box-shadow: 300px 100px 0 rgba(255, 255, 255, 0.5), 200px -450px 0 rgba(255, 255, 255, 0.2);
 }

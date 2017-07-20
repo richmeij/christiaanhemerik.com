@@ -2,3 +2,9 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+
+.link {
+	border-bottom: 1px solid $color-ui-300;
+	color: $color-primary-100;
+	text-decoration: none;
+}

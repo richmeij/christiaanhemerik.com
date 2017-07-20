@@ -7,7 +7,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Bitter|Merriweather|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Bitter|Lato:400,700,900");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -505,7 +505,7 @@ body {
   min-width: 320px;
   background-color: white;
   color: #414141;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5em;
 }
@@ -535,7 +535,7 @@ select {
   background-color: white;
   box-shadow: none;
   color: #414141;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   border-radius: 0;
 }
@@ -605,7 +605,7 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus {
-  box-shadow: inset 0 0 0 2px #006572;
+  box-shadow: inset 0 0 0 2px #006f7c;
 }
 
 iframe {
@@ -620,6 +620,12 @@ img {
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+.link {
+  border-bottom: 1px solid #aca59f;
+  color: #006f7c;
   text-decoration: none;
 }
 
@@ -685,7 +691,7 @@ h1, h2, h3 {
   font-family: "Bitter", "Georgia", "Times", serif;
   font-weight: normal;
   line-height: 1.625em;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .button {
@@ -695,7 +701,7 @@ h1, h2, h3 {
   user-select: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: #006572;
+  background-color: #006f7c;
   color: #d7cec7;
   text-align: center;
   font-weight: normal;
@@ -718,46 +724,46 @@ h1, h2, h3 {
 }
 
 .button:hover {
-  background-color: #00515b;
+  background-color: #005963;
   color: #d7cec7;
 }
 
 .button:focus {
-  box-shadow: inset 0 0 0 2px #003d44;
+  box-shadow: inset 0 0 0 2px #00434a;
 }
 
 .button:active {
-  background-color: #004750;
+  background-color: #004e57;
   color: #d7cec7;
 }
 
 .button:disabled {
-  background-color: #99c1c7;
+  background-color: #99c5cb;
   color: #d7cec7;
   cursor: not-allowed;
 }
 
 .button--cta {
-  background-color: #006572;
+  background-color: #006f7c;
   color: #d7cec7;
 }
 
 .button--cta:hover {
-  background-color: #005b67;
+  background-color: #006470;
   color: #d7cec7;
 }
 
 .button--cta:focus {
-  box-shadow: inset 0 0 0 2px #004750;
+  box-shadow: inset 0 0 0 2px #004e57;
 }
 
 .button--cta:active {
-  background-color: #00515b;
+  background-color: #005963;
   color: #d7cec7;
 }
 
 .button--cta:disabled {
-  background-color: #99c1c7;
+  background-color: #99c5cb;
   color: #d7cec7;
 }
 
@@ -796,7 +802,7 @@ h1, h2, h3 {
 }
 
 .button--ui:focus {
-  box-shadow: inset 0 0 0 2px #004750;
+  box-shadow: inset 0 0 0 2px #004e57;
 }
 
 .button--ui:active {
@@ -811,82 +817,82 @@ h1, h2, h3 {
 
 .button--transparent {
   background-color: transparent;
-  color: #006572;
+  color: #006f7c;
 }
 
 .button--transparent:hover {
   background-color: transparent;
-  color: #00515b;
+  color: #005963;
 }
 
 .button--transparent:focus {
-  box-shadow: inset 0 0 0 2px #006572;
+  box-shadow: inset 0 0 0 2px #006f7c;
 }
 
 .button--transparent:active {
   background-color: transparent;
-  color: #004750;
+  color: #004e57;
 }
 
 .button--transparent:disabled {
   background-color: transparent;
-  color: #99c1c7;
+  color: #99c5cb;
 }
 
 .button--outline {
   background-color: transparent;
   background-image: none;
-  box-shadow: inset 0 0 0 2px #006572;
-  color: #006572;
+  box-shadow: inset 0 0 0 2px #006f7c;
+  color: #006f7c;
 }
 
 .button--outline:hover {
   background-color: transparent;
   background-image: none;
-  box-shadow: inset 0 0 0 2px #00515b;
-  color: #00515b;
+  box-shadow: inset 0 0 0 2px #005963;
+  color: #005963;
 }
 
 .button--outline:focus {
-  box-shadow: inset 0 0 0 2px #003d44, inset 0 0 0 2px #006572;
+  box-shadow: inset 0 0 0 2px #00434a, inset 0 0 0 2px #006f7c;
 }
 
 .button--outline:active {
   background-color: transparent;
   background-image: none;
-  box-shadow: inset 0 0 0 2px #004750;
-  color: #004750;
+  box-shadow: inset 0 0 0 2px #004e57;
+  color: #004e57;
 }
 
 .button--outline:disabled {
   background-color: transparent;
   background-image: none;
-  box-shadow: inset 0 0 0 2px #99c1c7;
-  color: #99c1c7;
+  box-shadow: inset 0 0 0 2px #99c5cb;
+  color: #99c5cb;
 }
 
 .button--outline.button--cta {
-  box-shadow: inset 0 0 0 2px #006572;
-  color: #006572;
+  box-shadow: inset 0 0 0 2px #006f7c;
+  color: #006f7c;
 }
 
 .button--outline.button--cta:hover {
-  box-shadow: inset 0 0 0 2px #005b67;
-  color: #005b67;
+  box-shadow: inset 0 0 0 2px #006470;
+  color: #006470;
 }
 
 .button--outline.button--cta:focus {
-  box-shadow: inset 0 0 0 2px #004750, inset 0 0 0 2px #006572;
+  box-shadow: inset 0 0 0 2px #004e57, inset 0 0 0 2px #006f7c;
 }
 
 .button--outline.button--cta:active {
-  box-shadow: inset 0 0 0 2px #00515b;
-  color: #00515b;
+  box-shadow: inset 0 0 0 2px #005963;
+  color: #005963;
 }
 
 .button--outline.button--cta:disabled {
-  box-shadow: inset 0 0 0 2px #99c1c7;
-  color: #99c1c7;
+  box-shadow: inset 0 0 0 2px #99c5cb;
+  color: #99c5cb;
 }
 
 .button--outline.button--secondary {
@@ -924,7 +930,7 @@ h1, h2, h3 {
 }
 
 .button--outline.button--ui:focus {
-  box-shadow: inset 0 0 0 2px #004750, inset 0 0 0 2px #dbd3cd;
+  box-shadow: inset 0 0 0 2px #004e57, inset 0 0 0 2px #dbd3cd;
 }
 
 .button--outline.button--ui:active {
@@ -1021,8 +1027,8 @@ h1, h2, h3 {
 
 .navigation {
   display: block;
-  float: right;
-  margin: 18px 0 0;
+  padding: 18px 0;
+  text-align: center;
 }
 
 .navigation__item {
@@ -1033,14 +1039,21 @@ h1, h2, h3 {
 }
 
 .hero {
+  overflow: hidden;
+  padding-top: 52px;
+  padding-bottom: 64px;
   background-color: #d7cec7;
 }
 
 .hero__title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 48px;
   text-align: center;
   text-shadow: 4px 4px white;
-  font-size: 64px;
+  font-size: 72px;
   font-weight: bold;
+  line-height: 1.25em;
 }
 
 .hero__title span {
@@ -1051,35 +1064,96 @@ h1, h2, h3 {
 }
 
 .hero__subtitle {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
   font-size: 21px;
 }
 
 .hero__subtitle a {
   border-bottom: 1px solid #626e60;
-  color: #006572;
+  color: #006f7c;
+  font-weight: 700;
 }
 
 .hero__inner {
-  overflow: hidden;
   margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 52px;
-  max-width: 1020px;
+  max-width: 1040px;
 }
 
-.hero__text {
+.hero__content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
   float: right;
-  width: 50%;
+  padding-right: 32px;
+  padding-left: 72px;
+  width: 60%;
 }
 
 .hero__image {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  z-index: -1;
   display: block;
   float: left;
-  max-width: 440px;
-  max-height: 440px;
-  border-radius: 50%;
+  width: 40%;
   box-shadow: 300px 100px 0 rgba(255, 255, 255, 0.5), 200px -450px 0 rgba(255, 255, 255, 0.2);
+}
+
+.overview {
+  background-color: white;
+}
+
+.overview__inner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 24px 0;
+  max-width: 1280px;
+}
+
+.overview__column {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding: 32px;
+  width: 33.333%;
+}
+
+.overview__column-title {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d7cec7;
+  text-shadow: 2px 2px 0 #e3ddd8;
+  font-size: 24px;
+}
+
+.overview__column-item {
+  margin-bottom: 24px;
+}
+
+.overview__column-item-title {
+  margin-bottom: 4px;
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.overview__column-item-subtitle {
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
+}
+
+.overview__column-item-subtitle strong {
+  margin-left: 6px;
+  padding-left: 9px;
+  border-left: 1px solid #aca59f;
+  color: #aca59f;
 }
 
 @media screen and (max-width: 680px) {
@@ -1533,7 +1607,7 @@ h1, h2, h3 {
 
 .input-box__input.is-valid ~ .input-box__state-indicator {
   display: block;
-  background-color: #006572;
+  background-color: #006f7c;
   color: white;
 }
 
