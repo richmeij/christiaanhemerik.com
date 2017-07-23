@@ -1,0 +1,30 @@
+.page-section {
+	border-top: 1px solid $color-ui-100;
+}
+
+.page-section__header {
+	margin: 0 auto;
+	padding-top: 48px;
+	max-width: 1040px;
+	text-align: center;
+}
+
+.page-section__title {
+	margin-bottom: 0;
+	text-shadow: 1px 1px 1px $color-text-diap, 4px 4px tint($color-ui-100, 30%);
+	// font-family: $font-family-sans-serif;
+	font-size: $font-size-400;
+	font-weight: normal;
+}
+
+.page-section__subtitle {
+	//
+}
+
+.page-section__inner {
+	@include box-sizing(border-box);
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 24px 0;
+	max-width: 920px;
+}
