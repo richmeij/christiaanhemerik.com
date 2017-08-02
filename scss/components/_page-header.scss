@@ -13,8 +13,14 @@
 	justify-content: center;
 }
 
+.page-header__inner {
+	margin: 25% auto 0;
+	max-width: 400px;
+	text-align: center;
+}
+
 .page-header__title {
-	margin: 20% 0 6px;
+	margin: 0 0 6px;
 	padding-bottom: 12px;
 	border-bottom: 1px solid shade($color-purple, 10%);
 	color: $color-text-diap;
@@ -25,7 +31,6 @@
 
 .page-header__subtitle {
 	color: $color-text-diap;
-	// text-shadow: 1px 1px 1px rebeccapurple, 4px 4px shade(rebeccapurple, 40%);
 	font-size: $font-size-300;
 }
 
