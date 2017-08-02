@@ -1,6 +1,14 @@
 a {
-	color: inherit;
+	padding-right: 5px;
+	padding-left: 5px;
+	background: tint(rebeccapurple, 85%);
+	color: rebeccapurple;
 	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		border-bottom: 1px solid rebeccapurple;
+	}
 }
 
 .link {

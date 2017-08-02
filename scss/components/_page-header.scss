@@ -1,18 +1,38 @@
 .page-header {
-	overflow: hidden;
-	margin: 0;
-	padding: 8px 32px;
+	position: fixed;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 100vh;
+	background: url('../images/portrait-02.jpg') no-repeat center center;
+	background-size: cover;
+	vertical-align: middle;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .page-header__title {
-	display: inline-block;
-	margin-right: 10px;
-	padding-right: 10px;
-	border-right: 1px solid #056571;
-	font-size: 18px;
+	margin: 20% 0 6px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid shade($color-purple, 10%);
+	color: $color-text-diap;
+	text-shadow: 1px 1px 1px rebeccapurple, 6px 6px shade(rebeccapurple, 40%);
+	font-size: $font-size-700;
+	line-height: $line-height-50;
 }
 
 .page-header__subtitle {
-	display: inline-block;
-	font-size: 18px;
+	color: $color-text-diap;
+	// text-shadow: 1px 1px 1px rebeccapurple, 4px 4px shade(rebeccapurple, 40%);
+	font-size: $font-size-300;
+}
+
+.page-header__image {
+	margin: 10% 0 36px;
+	max-width: 150px;
+	border-radius: 50%;
+	// border: 12px solid shade($color-purple, 10%);
+	box-shadow: 0 0 0 12px rebeccapurple, 0 0 0 24px shade(rebeccapurple, 40%);
 }
