@@ -1,31 +1,40 @@
 .page-section {
 	@include box-sizing(border-box);
 	overflow: hidden;
-	padding: 48px 86px;
-	max-width: 768px;
-	border-top: 1px solid $color-ui-100;
+	padding: 86px 86px 72px;
 
 	&::first-child {
 		border-top: none;
 	}
 }
 
+.page-section--diap {
+	background-color: rebeccapurple;
+	color: $color-text-diap;
+}
+
 .page-section__header {
 	float: left;
-	width: 25%;
+	width: 20%;
 }
 
 .page-section__title {
 	margin-bottom: 0;
-	color: shade(rebeccapurple, 40%);
-	text-shadow: 1px 1px 1px $color-text-diap, 4px 4px tint($color-ui-100, 30%);
-	font-size: $font-size-200;
+	color: shade(rebeccapurple, 60%);
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px $color-text-diap, 3px 3px tint($color-ui-100, 30%);
+	font-size: $font-size-300;
 	font-weight: normal;
+	line-height: $line-height-90;
+
+	.page-section--diap & {
+		text-shadow: 1px 1px 1px rebeccapurple, 3px 3px tint(rebeccapurple, 20%);
+	}
 }
 
 .page-section__content {
 	@include box-sizing(border-box);
-	margin-left: 25%;
+	margin-left: 20%;
 
 	h2 {
 		font-size: $font-size-100;
@@ -36,10 +45,14 @@
 			color: tint($color-text, 50%);
 			font-weight: 200;
 		}
+
+		.page-section--diap & {
+			color: $color-text-diap;
+		}
 	}
 
 	h3 {
-		margin-top: -12px;
+		margin-top: -8px;
 		font-weight: 200;
 
 		span {
@@ -48,10 +61,28 @@
 			color: tint($color-text, 50%);
 			font-weight: 200;
 		}
-
-		&::before {
-			margin-left: -17px;
-			content: '— ';
-		}
 	}
+
+	ul {
+		margin-left: 18px;
+		list-style-type: disc;
+	}
+
+	// p:first-child {
+	// 	margin-bottom: 24px;
+	// 	font-size: $font-size-400;
+	// 	line-height: $line-height-100;
+	// 	text-shadow: 1px 1px 1px rebeccapurple, 4px 4px shade(rebeccapurple, 40%);
+	// }
+}
+
+.page-section__columns {
+	@include display(flex);
+	align-items: flex-start;
+}
+
+.page-section__column {
+	@include box-sizing(border-box);
+	margin: 0 16px 16px 0;
+	width: 50%;
 }

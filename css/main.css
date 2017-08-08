@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -507,7 +506,7 @@ body {
   background-color: white;
   color: #414141;
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5em;
 }
 
@@ -706,12 +705,13 @@ h2, h3, h4 {
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.625em;
+  line-height: 1.6875em;
   margin-bottom: 16px;
 }
 
-p {
+p, ul, ol, dl {
   margin-bottom: 16px;
+  line-height: 1.6875em;
 }
 
 .button {
@@ -1029,12 +1029,14 @@ p {
 .page-header {
   position: fixed;
   left: 0;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 100vh;
   background: url("../images/portrait-02.jpg") no-repeat center center;
   background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   vertical-align: middle;
   text-align: center;
   align-items: center;
@@ -1042,24 +1044,28 @@ p {
 }
 
 .page-header__inner {
-  margin: 25% auto 0;
-  max-width: 400px;
+  margin: 40% auto 0;
+  max-width: 500px;
   text-align: center;
 }
 
 .page-header__title {
   margin: 0 0 6px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #52274b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: white;
   text-shadow: 1px 1px 1px rebeccapurple, 6px 6px #3d1f5c;
-  font-size: 48px;
+  font-size: 60px;
   line-height: 1.125em;
 }
 
 .page-header__subtitle {
+  margin: 0 auto 0;
+  max-width: 400px;
   color: white;
+  text-shadow: 1px 1px 1px rebeccapurple, 4px 4px #3d1f5c;
   font-size: 21px;
+  line-height: 1.375em;
 }
 
 .page-header__image {
@@ -1074,33 +1080,42 @@ p {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow: hidden;
-  padding: 48px 86px;
-  max-width: 768px;
-  border-top: 1px solid #d7cec7;
+  padding: 86px 86px 72px;
 }
 
 .page-section::first-child {
   border-top: none;
 }
 
+.page-section--diap {
+  background-color: rebeccapurple;
+  color: white;
+}
+
 .page-section__header {
   float: left;
-  width: 25%;
+  width: 20%;
 }
 
 .page-section__title {
   margin-bottom: 0;
-  color: #3d1f5c;
-  text-shadow: 1px 1px 1px white, 4px 4px #e3ddd8;
-  font-size: 18px;
+  color: #29143d;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px white, 3px 3px #e3ddd8;
+  font-size: 21px;
   font-weight: normal;
+  line-height: 1.4375em;
+}
+
+.page-section--diap .page-section__title {
+  text-shadow: 1px 1px 1px rebeccapurple, 3px 3px #855cad;
 }
 
 .page-section__content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 .page-section__content h2 {
@@ -1114,8 +1129,12 @@ p {
   font-weight: 200;
 }
 
+.page-section--diap .page-section__content h2 {
+  color: white;
+}
+
 .page-section__content h3 {
-  margin-top: -12px;
+  margin-top: -8px;
   font-weight: 200;
 }
 
@@ -1126,9 +1145,28 @@ p {
   font-weight: 200;
 }
 
-.page-section__content h3::before {
-  margin-left: -17px;
-  content: '— ';
+.page-section__content ul {
+  margin-left: 18px;
+  list-style-type: disc;
+}
+
+.page-section__columns {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-section__column {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 16px 16px 0;
+  width: 50%;
 }
 
 .page-sections {
