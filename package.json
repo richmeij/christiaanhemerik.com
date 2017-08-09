@@ -10,6 +10,7 @@
   "dependencies": {
     "bourbon": "^4.3.0",
     "csscomb": "^4.0.0-alpha",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.4.0",
     "gulp-rename": "^1.2.2",

@@ -8,6 +8,10 @@
 	}
 }
 
+.page-section--minor {
+	padding: 36px 86px;
+}
+
 .page-section--diap {
 	background-color: rebeccapurple;
 	color: $color-text-diap;
@@ -66,6 +70,10 @@
 	ul {
 		margin-left: 18px;
 		list-style-type: disc;
+	}
+
+	small {
+		color: shade(rebeccapurple, 60%);
 	}
 
 	// p:first-child {

@@ -1052,7 +1052,7 @@ p, ul, ol, dl {
 .page-header__title {
   margin: 0 0 6px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #29143d;
   color: white;
   text-shadow: 1px 1px 1px rebeccapurple, 6px 6px #3d1f5c;
   font-size: 60px;
@@ -1085,6 +1085,10 @@ p, ul, ol, dl {
 
 .page-section::first-child {
   border-top: none;
+}
+
+.page-section--minor {
+  padding: 36px 86px;
 }
 
 .page-section--diap {
@@ -1148,6 +1152,10 @@ p, ul, ol, dl {
 .page-section__content ul {
   margin-left: 18px;
   list-style-type: disc;
+}
+
+.page-section__content small {
+  color: #29143d;
 }
 
 .page-section__columns {
