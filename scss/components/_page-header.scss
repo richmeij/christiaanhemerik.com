@@ -1,49 +1,91 @@
 .page-header {
-	position: fixed;
-	left: 0;
 	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	height: 100vh;
-	background: url('../images/portrait-02.jpg') no-repeat center center;
-	background-size: cover;
+	background: url('../images/portrait-02.jpg') no-repeat;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	vertical-align: middle;
 	text-align: center;
-	align-items: center;
-	justify-content: center;
+
+	@include media(0, $range-lap-s) {
+		padding: 40px 60px;
+		background-position: center bottom;
+		background-size: 100% auto;
+	}
+	@include media($range-lap-m, false) {
+		@include display(flex);
+		position: fixed;
+		left: 0;
+		flex-direction: column;
+		width: 50%;
+		height: 100vh;
+		background-position: center;
+		background-size: cover;
+		vertical-align: middle;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 .page-header__inner {
-	margin: 40% auto 0;
-	max-width: 500px;
+	@include box-sizing(border-box);
 	text-align: center;
+
+	@include media(0, $range-lap-s) {
+		margin: 0 auto;
+	}
+	@include media($range-lap-m, $range-lap-l) {
+		margin: 60% auto 0;
+		max-width: 480px;
+	}
+	@include media($range-desk, false) {
+		margin: 40% auto 0;
+		max-width: 480px;
+	}
 }
 
 .page-header__title {
 	margin: 0 0 6px;
 	padding-bottom: 12px;
+<<<<<<< HEAD
 	border-bottom: 1px solid shade(rebeccapurple, 60%);
+=======
+	border-bottom: 1px solid tint(rebeccapurple, 55%);
+>>>>>>> Adds responsiveness and mobile optimisations
 	color: $color-text-diap;
 	text-shadow: 1px 1px 1px rebeccapurple, 6px 6px shade(rebeccapurple, 40%);
-	font-size: $font-size-800;
 	line-height: $line-height-40;
+
+	@include media(0, $range-hand) {
+		font-size: $font-size-600;
+	}
+	@include media($range-lap-s) {
+		font-size: $font-size-800;
+	}
+	@include media($range-lap-m, $range-lap-l) {
+		font-size: $font-size-700;
+	}
+	@include media($range-desk, false) {
+		font-size: $font-size-800;
+	}
 }
 
 .page-header__subtitle {
 	margin: 0 auto 0;
-	max-width: 400px;
 	color: $color-text-diap;
 	text-shadow: 1px 1px 1px rebeccapurple, 4px 4px shade(rebeccapurple, 40%);
-	font-size: $font-size-300;
-	line-height: $line-height-80;
+
+	@include media(0, $range-hand) {
+		font-size: $font-size-300;
+		line-height: $line-height-60;
+	}
+	@include media($range-lap, false) {
+		max-width: 400px;
+		font-size: $font-size-300;
+		line-height: $line-height-80;
+	}
 }
 
 .page-header__image {
 	margin: 10% 0 36px;
 	max-width: 150px;
 	border-radius: 50%;
-	// border: 12px solid shade($color-purple, 10%);
 	box-shadow: 0 0 0 12px rebeccapurple, 0 0 0 24px shade(rebeccapurple, 40%);
 }

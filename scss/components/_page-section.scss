@@ -1,10 +1,17 @@
 .page-section {
 	@include box-sizing(border-box);
 	overflow: hidden;
-	padding: 86px 86px 72px;
 
-	&::first-child {
-		border-top: none;
+	@include media(0, $range-lap-s) {
+		padding: 48px 48px 36px;
+	}
+	@include media($range-lap-m, $range-lap-l) {
+		padding: 72px 86px;
+	}
+	@include media($range-desk, false) {
+		@include display(flex);
+		padding: 86px 86px 72px 48px;
+		align-items: flex-start;
 	}
 }
 
@@ -18,27 +25,35 @@
 }
 
 .page-section__header {
-	float: left;
-	width: 20%;
+	//
 }
 
 .page-section__title {
-	margin-bottom: 0;
+	@include box-sizing(border-box);
 	color: shade(rebeccapurple, 60%);
-	text-transform: uppercase;
 	text-shadow: 1px 1px 1px $color-text-diap, 3px 3px tint($color-ui-100, 30%);
 	font-size: $font-size-300;
 	font-weight: normal;
-	line-height: $line-height-90;
+	line-height: $line-height-80;
+
+	@include media(0, $range-lap) {
+		margin-bottom: 24px;
+	}
+	@include media($range-desk, false) {
+		margin-bottom: 0;
+		padding-right: 32px;
+		width: 132px;
+		text-align: right;
+	}
 
 	.page-section--diap & {
+		color: tint(rebeccapurple, 90%);
 		text-shadow: 1px 1px 1px rebeccapurple, 3px 3px tint(rebeccapurple, 20%);
 	}
 }
 
 .page-section__content {
 	@include box-sizing(border-box);
-	margin-left: 20%;
 
 	h2 {
 		font-size: $font-size-100;
@@ -48,6 +63,10 @@
 			margin-left: 6px;
 			color: tint($color-text, 50%);
 			font-weight: 200;
+
+			.page-section--diap & {
+				color: tint(rebeccapurple, 55%);
+			}
 		}
 
 		.page-section--diap & {
@@ -64,6 +83,10 @@
 			margin-left: 6px;
 			color: tint($color-text, 50%);
 			font-weight: 200;
+
+			.page-section--diap & {
+				color: tint(rebeccapurple, 55%);
+			}
 		}
 	}
 
@@ -71,6 +94,7 @@
 		margin-left: 18px;
 		list-style-type: disc;
 	}
+<<<<<<< HEAD
 
 	small {
 		color: shade(rebeccapurple, 60%);
@@ -82,6 +106,8 @@
 	// 	line-height: $line-height-100;
 	// 	text-shadow: 1px 1px 1px rebeccapurple, 4px 4px shade(rebeccapurple, 40%);
 	// }
+=======
+>>>>>>> Adds responsiveness and mobile optimisations
 }
 
 .page-section__columns {

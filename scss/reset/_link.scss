@@ -1,9 +1,12 @@
 a {
-	padding-right: 5px;
-	padding-left: 5px;
+	margin-right: 1px;
+	margin-left: 1px;
+	padding-right: 6px;
+	padding-left: 6px;
 	background: tint(rebeccapurple, 85%);
 	color: rebeccapurple;
 	text-decoration: none;
+	white-space: nowrap;
 
 	&:hover,
 	&:focus {

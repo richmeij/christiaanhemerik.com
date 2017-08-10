@@ -1,8 +1,14 @@
 .page-sections {
 	@include box-sizing(border-box);
-	position: absolute;
-	right: 0;
-	width: 50%;
-	height: 100vh;
 	background: $color-white;
+
+	@include media(0, $range-lap-s) {
+		width: 100%;
+	}
+	@include media($range-lap-m, false) {
+		position: absolute;
+		right: 0;
+		width: 50%;
+		height: 100vh;
+	}
 }
