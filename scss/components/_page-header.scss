@@ -36,7 +36,7 @@
 		max-width: 480px;
 	}
 	@include media($range-desk, false) {
-		margin: 40% auto 0;
+		margin: 42% auto 0;
 		max-width: 480px;
 	}
 }
@@ -44,11 +44,7 @@
 .page-header__title {
 	margin: 0 0 6px;
 	padding-bottom: 12px;
-<<<<<<< HEAD
-	border-bottom: 1px solid shade(rebeccapurple, 60%);
-=======
 	border-bottom: 1px solid tint(rebeccapurple, 55%);
->>>>>>> Adds responsiveness and mobile optimisations
 	color: $color-text-diap;
 	text-shadow: 1px 1px 1px rebeccapurple, 6px 6px shade(rebeccapurple, 40%);
 	line-height: $line-height-40;
